@@ -1,0 +1,36 @@
+{
+  "name": "todo-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "start": "node server.js",
+    "serve": "concurrently \"npm run start\" \"npm run dev\"",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@firebasegen/default": "file:generated/javascript/default",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "axios": "^1.7.7",
+    "cookieparser": "^0.1.0",
+    "firebase": "^10.14.0",
+    "js-cookie": "^3.0.5",
+    "jwt-decode": "^4.0.0",
+    "mongoose": "^8.7.0",
+    "nuxt": "^3.13.2",
+    "pinia": "^2.2.4",
+    "vue": "latest",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^7.0.0",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.13"
+  }
+}
